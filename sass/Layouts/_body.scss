@@ -1,0 +1,10 @@
+body {
+    width: 100%;
+    font-style: $font_text;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}

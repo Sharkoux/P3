@@ -1,0 +1,21 @@
+.restaurants {
+    display: flex;
+    width: 100%;
+    background-color: $color_general;
+    .restaurants__card__container{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        background-color: white;
+                img  {
+                    
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0 0;
+                }
+            
+        }
+    }

@@ -1,0 +1,20 @@
+.section-search 
+.search{
+    width: 100%;
+    background-color: $color_localisation ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+input{
+        border: 0px;
+        background-color:transparent;
+        text-align: center;
+        color:black;
+}
+.search__input[type=text]{
+font-weight: bold;
+}

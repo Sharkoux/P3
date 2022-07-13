@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn {
+  font-style: "Roboto", sans-serif;
+  color: white;
+  background-color: #9356DC;
+  border: 0px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  font-style: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.section-search .search {
+  width: 100%;
+  background-color: #eaeaea;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: 0px;
+  background-color: transparent;
+  text-align: center;
+  color: black;
+}
+
+.search__input[type=text] {
+  font-weight: bold;
+}
+
+.function {
+  padding: 25px 10px 25px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.function li {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  font-weight: bold;
+  align-items: baseline;
+}
+.function li i {
+  color: #eaeaea;
+  width: 16px;
+}
+.function li .fa-1, .function li .fa-2, .function li .fa-3 {
+  width: 23px;
+  line-height: 23px;
+  border: 1px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  font-size: 10px;
+  text-align: center;
+  margin: 0 30px 0 -30px;
+  position: relative;
+}
+.function li p {
+  margin-left: 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  height: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-search {
+  font-style: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-search .explore {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.section-search .explore p {
+  padding: 20px;
+}
+.section-search .explore .explore__btn {
+  padding-bottom: 50px;
+}
+
+.restaurants {
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.restaurants .restaurants__card__container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.restaurants .restaurants__card__container img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */
