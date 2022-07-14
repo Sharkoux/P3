@@ -3,9 +3,11 @@
     padding: 25px 10px 25px 10px;
     display: flex;
     flex-direction: column;
- 
+    justify-content: center;
+    
+        
     li {
-       
+        box-shadow: 4px 4px 5px $color_localisation;
         background-color: $color_general;
         display: flex;
         flex-direction: row;
@@ -15,12 +17,14 @@
         margin: 10px;
         font-weight: bold;
         align-items: baseline;
-        i {
-            color: $color_localisation;
+       
+   
+        .function_i {
+            color: darken($color:  $color_localisation, $amount: 20);
             width: 16px;
         }
         .fa-1,.fa-2,.fa-3 {
-
+            color: white;
             width: 23px;
             line-height: 23px;
             border: 1px;
@@ -35,5 +39,10 @@
             margin-left: 20px;
         }
     }
-
+    li:hover{
+        background-color: $color_blue_hover;
+        > .function_i {
+            color: $color_primary;
+        }
+        }
 }

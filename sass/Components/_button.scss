@@ -2,9 +2,15 @@
 .btn {
     font-style: $font_text;
     color: white;
-    background-color: $color_primary;
+    background: linear-gradient($color_secondary, $color_primary);
     border: 0px;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 25px;
     font-size: 15px;
+    box-shadow: 4px 4px 5px darken($color: $color_localisation, $amount: 10);
+}
+
+.btn:hover {
+    background: linear-gradient($color_secondary_lighten, $color_primary_lighten);
+    box-shadow: 4px 4px 5px darken($color: $color_localisation, $amount: 40);
 }

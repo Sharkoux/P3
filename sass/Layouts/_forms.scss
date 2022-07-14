@@ -4,14 +4,16 @@
     background-color: $color_localisation ;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: inset 0px 3px 0px darken($color: $color_localisation, $amount: 6);
 }
 form {
     display: flex;
     justify-content: center;
 }
 input{
-        border: 0px;
+        border: none;
         background-color:transparent;
+        outline: none;
         text-align: center;
         color:black;
 }
