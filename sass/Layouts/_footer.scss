@@ -25,6 +25,8 @@ footer {
     li {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         align-items: baseline;
         margin-bottom: 6px;
         
