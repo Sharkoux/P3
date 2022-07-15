@@ -44,4 +44,14 @@
     margin-top: 15px;
     border: 1px transparent;
     border-radius: 15px;
+    .Menu__value {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.order {
+   display: flex;
+   justify-content: center;
 }

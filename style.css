@@ -332,5 +332,15 @@ footer li a {
   border: 1px transparent;
   border-radius: 15px;
 }
+.Menu__card__container .Menu__value {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
