@@ -21,14 +21,14 @@
     }
     
     h2 {
-        color:  lighten($color: #000000, $amount: 55);
+        color: lighten($color: #000000, $amount: 55);
         font-weight: 100;
-        font-size: 20px;
+        font-size: 17px;
         padding-bottom: 3px;
         padding-top: 15px;
     }
     span {
-        width: 15%;
+        width: 16%;
         border-bottom: 3px solid lighten($color: #000000, $amount: 70);
     }
 }
@@ -36,7 +36,6 @@
 .Menu__card__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     background-color: white;
@@ -44,6 +43,11 @@
     margin-top: 15px;
     border: 1px transparent;
     border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0;
+    animation: test 3s forwards;
+    
     .Menu__value {
         display: flex;
         flex-direction: column;
@@ -52,6 +56,51 @@
 }
 
 .order {
+   margin-top : 45px;
+   margin-bottom: 28px;
    display: flex;
    justify-content: center;
+   .btn {
+    padding-right: 25px;
+    padding-left: 25px;
+   }
+}
+
+.restaurants__body-position {
+    text-overflow: ellipsis;
+}
+
+.anim2 {
+    animation-delay: 1s;
+}
+.anim3 {
+    animation-delay: 2s;
+}
+.anim4 {
+    animation-delay: 3s;
+}
+
+.anim5 {
+    animation-delay: 4s;
+}
+.anim6 {
+    animation-delay: 5s;
+}
+.anim7 {
+    animation-delay: 6s;
+}
+.anim8 {
+    animation-delay: 7s;
+}
+.anim9 {
+    animation-delay: 8s;
+}
+
+@keyframes test {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }

@@ -18,10 +18,11 @@
 </head>
 
 <body>
+    
     <!--Container-->
     <div class="container">
-
-        <!--Header-->
+        <div class="loader_container"><div class="loader"></div></div>
+         <!--Header-->
         <header class="header">
             <img class="header__img" src="./asset/logo/ohmyfood.png" alt="Logo">
         </header>
@@ -35,7 +36,7 @@
                     <span class="search__icon">
                         <i class="fa-solid fa-location-dot"></i>
                     </span>
-                    <input type="text" name="localisation" placeholder="Paris, Belleville" class="search__input">
+                    <p>Paris, Belleville</p>
                 </form>
             </div>
             <div class="explore">
@@ -49,6 +50,7 @@
 
         <!--Main -->
         <main>
+           
             <!--Section 2-->
             <section class="function">
                 <div class="function__container">
@@ -95,7 +97,10 @@
                                         <p>Menilmontant</p>
                                     </div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
+                                <div class="like">
+                                <i class="fa-regular fa-heart heart_empty"></i>
+                                <i class="fa-solid fa-heart heart_full"></i>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -118,7 +123,10 @@
                                         <p>Charonne</p>
                                     </div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
+                                <div class="like">
+                                    <i class="fa-regular fa-heart heart_empty"></i>
+                                    <i class="fa-solid fa-heart heart_full"></i>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -138,13 +146,16 @@
                                         <p>Cité Rouge</p>
                                     </div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
+                                <div class="like">
+                                    <i class="fa-regular fa-heart heart_empty"></i>
+                                    <i class="fa-solid fa-heart heart_full"></i>
+                                </div>
                             </div>
                         </a>
                     </div>
                     <!--Card 4 -->
                     <div class="restaurants__card__container">
-                        <a class="restaurants__link" href="#">
+                        <a class="restaurants__link" href="./menu/ledelicedesens.html">
                             <div class="restaurants__img">
                                 <img class="img"
                                     src="./asset/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -159,7 +170,10 @@
                                         <p>Folie-Méricourt</p>
                                     </div>
                                 </div>
-                                <i class="fa-regular fa-heart"></i>
+                                <div class="like">
+                                    <i class="fa-regular fa-heart heart_empty"></i>
+                                    <i class="fa-solid fa-heart heart_full"></i>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -191,17 +205,17 @@
             <img class="footer__img" src="./asset/logo/ohmyfood.png" alt="Logo">
             <ul class="footer__ul">
                 <li class="footer__li">
-                    <i class="fa-solid fa-utensils"></i>
+                    <span><i class="fa-solid fa-utensils"></i></span>
                     <a href="#">Proposer un restaurant</a>
                 </li>
                 <li class="footer__li">
-                    <i class="fa-solid fa-handshake-angle"></i>
+                    <span><i class="fa-solid fa-handshake-angle"></i></span>
                     <a href="#">Devenir partenaire</a>
                 </li>
                 <li class="footer_li">
                     <a href="#">Mentions légales</a>
                 </li>
-                <li class="footer_li">
+                <li class="footer_li ">
                     <a href="#">Contact</a>
                 </li>
             </ul>

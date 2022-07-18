@@ -8,6 +8,7 @@
     border-radius: 25px;
     font-size: 15px;
     box-shadow: 4px 4px 5px darken($color: $color_localisation, $amount: 10);
+    cursor: pointer;
 }
 
 .btn:hover {

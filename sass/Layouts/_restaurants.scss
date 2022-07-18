@@ -63,12 +63,38 @@
         .restaurants__body {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             padding: 10px 10px;
         }
-        i {
-         font-size: 20px;
-
+        .like {
+            display: flex;
+            justify-content: flex-end;
+            
+            .heart_empty {
+                opacity: 1;
+                position: absolute;
+                
+            }
+            .heart_full {
+                color: $color_primary_lighten;
+                opacity: 0;
+            }
         }
-    }
+        i:hover {
+            
+                animation: heart 2s;
+                @keyframes heart {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+            
+                }
+            }
+        }
+    
+
+   

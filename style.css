@@ -13,6 +13,7 @@
   border-radius: 25px;
   font-size: 15px;
   box-shadow: 4px 4px 5px #d1d1d1;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -30,6 +31,11 @@ body {
   margin: auto;
   flex-direction: column;
 }
+@media screen and (min-width: 991.99px) {
+  .container {
+    max-width: 992px;
+  }
+}
 
 .section-search .search {
   width: 100%;
@@ -43,16 +49,12 @@ form {
   display: flex;
   justify-content: center;
 }
-
-input {
+form p {
+  margin-left: 15px;
   border: none;
-  background-color: transparent;
-  outline: none;
+  font-size: 15px;
   text-align: center;
   color: black;
-}
-
-.search__input[type=text] {
   font-weight: bold;
 }
 
@@ -73,6 +75,7 @@ input {
   margin: 10px;
   font-weight: bold;
   align-items: baseline;
+  cursor: pointer;
 }
 .function li .function_i {
   color: #b7b7b7;
@@ -199,12 +202,32 @@ header img {
 .restaurants .restaurants__body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 10px;
 }
-.restaurants i {
-  font-size: 20px;
+.restaurants .like {
+  display: flex;
+  justify-content: flex-end;
+}
+.restaurants .like .heart_empty {
+  opacity: 1;
+  position: absolute;
+}
+.restaurants .like .heart_full {
+  color: #ae80e5;
+  opacity: 0;
+}
+.restaurants i:hover {
+  animation: heart 2s;
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -230,11 +253,15 @@ footer .footer__container {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 767.99px) {
+  footer .footer__container {
+    align-items: center;
+  }
+}
 footer img {
   filter: invert(100);
-  height: 17px;
   width: 120px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 footer li {
   list-style: none;
@@ -243,13 +270,30 @@ footer li {
   flex-direction: row;
   align-items: baseline;
   margin-bottom: 6px;
+  width: 100%;
 }
-footer li i {
+@media screen and (min-width: 767.99px) {
+  footer li {
+    width: 50%;
+  }
+}
+footer li span {
   margin-right: 10px;
   font-size: 12px;
+  width: 5%;
 }
 footer li a {
   color: white;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767.99px) {
+  footer ul {
+    flex-direction: row;
+  }
 }
 
 /* header menu */
@@ -284,6 +328,7 @@ footer li a {
   font-weight: bold;
   position: relative;
   right: 40px;
+  cursor: pointer;
 }
 
 .Menu {
@@ -311,19 +356,18 @@ footer li a {
 .Menu h2 {
   color: #8c8c8c;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 17px;
   padding-bottom: 3px;
   padding-top: 15px;
 }
 .Menu span {
-  width: 15%;
+  width: 16%;
   border-bottom: 3px solid #b3b3b3;
 }
 
 .Menu__card__container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   background-color: white;
@@ -331,6 +375,10 @@ footer li a {
   margin-top: 15px;
   border: 1px transparent;
   border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+  opacity: 0;
+  animation: test 3s forwards;
 }
 .Menu__card__container .Menu__value {
   display: flex;
@@ -339,8 +387,103 @@ footer li a {
 }
 
 .order {
+  margin-top: 45px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: center;
+}
+.order .btn {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.restaurants__body-position {
+  text-overflow: ellipsis;
+}
+
+.anim2 {
+  animation-delay: 1s;
+}
+
+.anim3 {
+  animation-delay: 2s;
+}
+
+.anim4 {
+  animation-delay: 3s;
+}
+
+.anim5 {
+  animation-delay: 4s;
+}
+
+.anim6 {
+  animation-delay: 5s;
+}
+
+.anim7 {
+  animation-delay: 6s;
+}
+
+.anim8 {
+  animation-delay: 7s;
+}
+
+.anim9 {
+  animation-delay: 8s;
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loader_container {
+  background-color: #f6f6f6;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: exit 7s forwards;
+}
+
+.loader {
+  display: flex;
+  position: fixed;
+  border: 16px solid #f5edff;
+  border-top: 16px solid #ae80e5;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear forwards;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes exit {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

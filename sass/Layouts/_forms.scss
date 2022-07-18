@@ -9,14 +9,13 @@
 form {
     display: flex;
     justify-content: center;
-}
-input{
+
+    p{
+        margin-left: 15px;
         border: none;
-        background-color:transparent;
-        outline: none;
+        font-size: 15px;
         text-align: center;
         color:black;
-}
-.search__input[type=text]{
-font-weight: bold;
+        font-weight: bold;
+    }
 }
