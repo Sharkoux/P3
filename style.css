@@ -378,7 +378,7 @@ footer ul {
   font-size: 15px;
   cursor: pointer;
   opacity: 0;
-  animation: test 3s forwards;
+  animation: test 2s forwards;
 }
 .Menu__card__container .Menu__value {
   display: flex;
@@ -402,7 +402,13 @@ footer ul {
   flex-direction: column;
   width: 65%;
 }
+.restaurants__body-bis h3 {
+  white-space: nowrap;
+}
 
+.restaurants__body-position {
+  font-size: 13px;
+}
 .restaurants__body-position p {
   white-space: nowrap;
 }
@@ -439,6 +445,10 @@ footer ul {
   animation-delay: 8s;
 }
 
+.anim10 {
+  animation-delay: 2.5s;
+}
+
 @keyframes test {
   from {
     opacity: 0;
@@ -469,21 +479,32 @@ footer ul {
 .anim6:hover .checkbox,
 .anim7:hover .checkbox,
 .anim8:hover .checkbox,
-.anim9:hover .checkbox {
+.anim9:hover .checkbox,
+.anim10:hover .checkbox {
   display: flex;
 }
 
 .anim1:hover p,
+.anim1:hover h3,
 .anim2:hover p,
+.anim2:hover h3,
 .anim3:hover p,
+.anim3:hover h3,
 .anim4:hover p,
+.anim4:hover h3,
 .anim5:hover p,
+.anim5:hover h3,
 .anim6:hover p,
+.anim6:hover h3,
 .anim7:hover p,
+.anim7:hover h3,
 .anim8:hover p,
-.anim9:hover p {
+.anim8:hover h3,
+.anim9:hover p,
+.anim9:hover h3,
+.anim10:hover p,
+.anim10:hover h3 {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 

@@ -50,7 +50,7 @@
     font-size: 15px;
     cursor: pointer;
     opacity: 0;
-    animation: test 3s forwards;
+    animation: test 2s forwards;
 
     .Menu__value {
         display: flex;
@@ -75,12 +75,14 @@
 display: flex;
 flex-direction: column;
 width: 65%;
-
+    h3 {
+        white-space: nowrap;
+    }
 }
 
 .restaurants__body-position {
-    
-    p {
+    font-size: 13px;
+    p{
         white-space: nowrap;
     }
 }
@@ -92,6 +94,7 @@ width: 65%;
 .anim3 {
     animation-delay: 2s;
 }
+
 
 .anim4 {
     animation-delay: 3s;
@@ -115,6 +118,10 @@ width: 65%;
 
 .anim9 {
     animation-delay: 8s;
+}
+
+.anim10 {
+    animation-delay: 2.5s;
 }
 
 @keyframes test {
@@ -149,21 +156,33 @@ width: 65%;
 .anim6:hover .checkbox,
 .anim7:hover .checkbox,
 .anim8:hover .checkbox,
-.anim9:hover .checkbox {
+.anim9:hover .checkbox,
+.anim10:hover .checkbox {
     display: flex;
 
 }
 
 .anim1:hover p,
+.anim1:hover h3,
 .anim2:hover p,
+.anim2:hover h3,
 .anim3:hover p,
+.anim3:hover h3,
 .anim4:hover p,
+.anim4:hover h3,
 .anim5:hover p,
+.anim5:hover h3,
 .anim6:hover p,
+.anim6:hover h3,
 .anim7:hover p,
+.anim7:hover h3,
 .anim8:hover p,
-.anim9:hover p {
+.anim8:hover h3,
+.anim9:hover p,
+.anim9:hover h3,
+.anim10:hover p,
+.anim10:hover h3 {
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
 }
+
