@@ -5,6 +5,7 @@
     margin-top: -45px;
     border-radius: 30px 30px 0px 0px;
     padding: 17px;
+
     .Menu__title {
         display: flex;
         flex-direction: row;
@@ -12,14 +13,16 @@
         align-items: baseline;
         padding-top: 15px;
         padding-bottom: 15px;
+
         i {
             font-size: 23px;
         }
     }
+
     h1 {
         font-family: $font_title;
     }
-    
+
     h2 {
         color: lighten($color: #000000, $amount: 55);
         font-weight: 100;
@@ -27,6 +30,7 @@
         padding-bottom: 3px;
         padding-top: 15px;
     }
+   
     span {
         width: 16%;
         border-bottom: 3px solid lighten($color: #000000, $amount: 70);
@@ -47,7 +51,7 @@
     cursor: pointer;
     opacity: 0;
     animation: test 3s forwards;
-    
+
     .Menu__value {
         display: flex;
         flex-direction: column;
@@ -56,26 +60,39 @@
 }
 
 .order {
-   margin-top : 45px;
-   margin-bottom: 28px;
-   display: flex;
-   justify-content: center;
-   .btn {
-    padding-right: 25px;
-    padding-left: 25px;
-   }
+    margin-top: 45px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+
+    .btn {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+.restaurants__body-bis {
+display: flex;
+flex-direction: column;
+width: 65%;
+
 }
 
 .restaurants__body-position {
-    text-overflow: ellipsis;
+    
+    p {
+        white-space: nowrap;
+    }
 }
 
 .anim2 {
     animation-delay: 1s;
 }
+
 .anim3 {
     animation-delay: 2s;
 }
+
 .anim4 {
     animation-delay: 3s;
 }
@@ -83,24 +100,70 @@
 .anim5 {
     animation-delay: 4s;
 }
+
 .anim6 {
     animation-delay: 5s;
 }
+
 .anim7 {
     animation-delay: 6s;
 }
+
 .anim8 {
     animation-delay: 7s;
 }
+
 .anim9 {
     animation-delay: 8s;
 }
 
 @keyframes test {
     from {
-        opacity:0;
+        opacity: 0;
     }
+
     to {
-        opacity:1;
+        opacity: 1;
     }
+}
+
+.checkbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    background-color: $color_tertiary;
+    color: white;
+    margin: -10px;
+    width: 20%;
+    border-radius: 0 10px 10px 0;
+    display: none;
+    position: relative;
+}
+
+.anim1:hover .checkbox, 
+.anim2:hover .checkbox,
+.anim3:hover .checkbox,
+.anim4:hover .checkbox,
+.anim5:hover .checkbox,
+.anim6:hover .checkbox,
+.anim7:hover .checkbox,
+.anim8:hover .checkbox,
+.anim9:hover .checkbox {
+    display: flex;
+
+}
+
+.anim1:hover p,
+.anim2:hover p,
+.anim3:hover p,
+.anim4:hover p,
+.anim5:hover p,
+.anim6:hover p,
+.anim7:hover p,
+.anim8:hover p,
+.anim9:hover p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

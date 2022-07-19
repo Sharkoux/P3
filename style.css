@@ -397,8 +397,14 @@ footer ul {
   padding-left: 25px;
 }
 
-.restaurants__body-position {
-  text-overflow: ellipsis;
+.restaurants__body-bis {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.restaurants__body-position p {
+  white-space: nowrap;
 }
 
 .anim2 {
@@ -441,6 +447,46 @@ footer ul {
     opacity: 1;
   }
 }
+.checkbox {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  background-color: #99E2D0;
+  color: white;
+  margin: -10px;
+  width: 20%;
+  border-radius: 0 10px 10px 0;
+  display: none;
+  position: relative;
+}
+
+.anim1:hover .checkbox,
+.anim2:hover .checkbox,
+.anim3:hover .checkbox,
+.anim4:hover .checkbox,
+.anim5:hover .checkbox,
+.anim6:hover .checkbox,
+.anim7:hover .checkbox,
+.anim8:hover .checkbox,
+.anim9:hover .checkbox {
+  display: flex;
+}
+
+.anim1:hover p,
+.anim2:hover p,
+.anim3:hover p,
+.anim4:hover p,
+.anim5:hover p,
+.anim6:hover p,
+.anim7:hover p,
+.anim8:hover p,
+.anim9:hover p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .loader_container {
   background-color: #f6f6f6;
   opacity: 0.8;
