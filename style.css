@@ -7,7 +7,7 @@
 
 /* Button */
 .btn {
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border: 0px;
