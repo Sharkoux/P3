@@ -197,7 +197,8 @@ header img {
   width: 100%;
   height: 200px;
   border-radius: 20px 20px 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .restaurants .restaurants__new {
   top: 15px;
@@ -230,7 +231,16 @@ header img {
   opacity: 0;
 }
 .restaurants i:hover {
-  animation: heart 2s;
+  -webkit-animation: heart 2s;
+          animation: heart 2s;
+}
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes heart {
   0% {
@@ -329,7 +339,8 @@ footer ul {
 }
 .header__menu .header__img__background .img__background {
   height: auto;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   margin-top: 0px;
 }
 
@@ -393,7 +404,8 @@ footer ul {
   font-size: 15px;
   cursor: pointer;
   opacity: 0;
-  animation: test 2s forwards;
+  -webkit-animation: test 2s forwards;
+          animation: test 2s forwards;
   /* Card Value */
 }
 .Menu__card__container .Menu__value {
@@ -433,39 +445,57 @@ footer ul {
 
 /* animation */
 .anim2 {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .anim3 {
-  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .anim4 {
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .anim5 {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .anim6 {
-  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .anim7 {
-  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 .anim8 {
-  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .anim9 {
-  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .anim10 {
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes test {
@@ -538,7 +568,8 @@ footer ul {
   left: 0;
   right: 0;
   z-index: 1;
-  animation: exit 7s forwards;
+  -webkit-animation: exit 7s forwards;
+          animation: exit 7s forwards;
 }
 
 .loader {
@@ -549,12 +580,23 @@ footer ul {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear forwards;
+  -webkit-animation: spin 2s linear forwards;
+          animation: spin 2s linear forwards;
   top: 50%;
   left: 50%;
   margin-top: -60px;
   margin-left: -60px;
   z-index: 1;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
 }
 
 @keyframes spin {
@@ -566,12 +608,17 @@ footer ul {
     visibility: hidden;
   }
 }
-@keyframes exit {
+@-webkit-keyframes exit {
   to {
     width: 0;
     height: 0;
     overflow: hidden;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+@keyframes exit {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
