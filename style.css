@@ -407,7 +407,7 @@ footer ul {
   font-size: 15px;
   cursor: pointer;
   opacity: 0;
-  animation: test 1s forwards;
+  animation: test 0.5s forwards;
   overflow: hidden;
   /* Card Value */
 }
@@ -452,31 +452,31 @@ footer ul {
 }
 
 .anim3 {
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 
 .anim4 {
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .anim5 {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .anim6 {
-  animation-delay: 5s;
+  animation-delay: 3.5s;
 }
 
 .anim7 {
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 
 .anim8 {
-  animation-delay: 7s;
+  animation-delay: 4.5s;
 }
 
 .anim9 {
-  animation-delay: 8s;
+  animation-delay: 5s;
 }
 
 .anim10 {
