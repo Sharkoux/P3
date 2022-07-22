@@ -342,7 +342,8 @@ footer ul {
 }
 .header__menu .header__img__background .img__background {
   height: auto;
-  object-fit: fill;
+  max-height: 700px;
+  object-fit: cover;
   margin-top: 0px;
 }
 
@@ -407,6 +408,7 @@ footer ul {
   cursor: pointer;
   opacity: 0;
   animation: test 1s forwards;
+  overflow: hidden;
   /* Card Value */
 }
 .Menu__card__container .Menu__value {
@@ -438,7 +440,7 @@ footer ul {
 }
 
 .restaurants__body-position {
-  font-size: 13px;
+  font-size: 12px;
 }
 .restaurants__body-position p {
   white-space: nowrap;
@@ -484,11 +486,10 @@ footer ul {
 @keyframes test {
   from {
     opacity: 0;
-    top: 50px;
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
-    top: 0px;
   }
 }
 /* Checkbox and effect hover */
@@ -506,7 +507,22 @@ footer ul {
   position: relative;
 }
 
+@keyframes check {
+  from {
+    transform: translateX(55px);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(180deg);
+  }
+}
+.anim:hover i {
+  animation: rotation 0.5s forwards;
+}
+
 .anim:hover .checkbox {
+  animation: check 0.5s forwards;
   display: flex;
 }
 
@@ -526,7 +542,7 @@ footer ul {
   left: 0;
   right: 0;
   z-index: 1;
-  animation: exit 7s forwards;
+  animation: exit 5s forwards;
 }
 
 .loader {
@@ -537,7 +553,7 @@ footer ul {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear forwards;
+  animation: spin 1.5s linear forwards;
   top: 50%;
   left: 50%;
   margin-top: -60px;

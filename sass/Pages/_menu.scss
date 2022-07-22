@@ -55,6 +55,7 @@
     cursor: pointer;
     opacity: 0;
     animation: test 1s forwards;
+    overflow: hidden;
     /* Card Value */
     .Menu__value {
         display: flex;
@@ -87,7 +88,7 @@ width: 65%;
 }
 
 .restaurants__body-position {
-    font-size: 13px;
+    font-size: 12px;
     p{
         white-space: nowrap;
     }
@@ -133,12 +134,12 @@ width: 65%;
 @keyframes test {
     from {
         opacity: 0;
-        top: 50px;
+        transform: translateY(15px);
     }
 
     to {
         opacity: 1;
-        top: 0px;
+        
     }
 }
 
@@ -155,10 +156,28 @@ width: 65%;
     border-radius: 0 10px 10px 0;
     display: none;
     position: relative;
+   
 }
 
+@keyframes check {
+    from {
+        transform: translateX(55px);
+    }
+    
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(180deg);
+    }
+    
+}
+.anim:hover i {
+    animation: rotation 0.5s forwards;
+}
 
 .anim:hover .checkbox {
+    animation: check 0.5s forwards;
     display: flex;
 }
 

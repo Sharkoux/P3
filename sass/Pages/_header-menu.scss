@@ -18,7 +18,8 @@
         width: 100%;
         .img__background {
             height: auto;
-            object-fit: fill;
+            max-height: 700px;
+            object-fit: cover;
             margin-top: 0px;
         }
     }
