@@ -54,7 +54,7 @@
     font-size: 15px;
     cursor: pointer;
     opacity: 0;
-    animation: test 2s forwards;
+    animation: test 1s forwards;
     /* Card Value */
     .Menu__value {
         display: flex;
@@ -133,10 +133,12 @@ width: 65%;
 @keyframes test {
     from {
         opacity: 0;
+        top: 50px;
     }
 
     to {
         opacity: 1;
+        top: 0px;
     }
 }
 

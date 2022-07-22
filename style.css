@@ -41,14 +41,6 @@ body {
 }
 
 /* inactive form */
-.search {
-  width: 100%;
-  background-color: #eaeaea;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: inset 0px 3px 0px #dbdbdb;
-}
-
 form {
   display: flex;
   justify-content: center;
@@ -121,6 +113,27 @@ header img {
 }
 
 /* Zone Search */
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #eaeaea;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: inset 0px 3px 0px #dbdbdb;
+}
+
+.search_city {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.search_city .search__icon {
+  position: absolute;
+  left: -30px;
+}
+
 .section-search {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -230,7 +243,7 @@ header img {
   opacity: 0;
 }
 .restaurants i:hover {
-  animation: heart 2s;
+  animation: heart 1s;
 }
 @keyframes heart {
   0% {
@@ -393,7 +406,7 @@ footer ul {
   font-size: 15px;
   cursor: pointer;
   opacity: 0;
-  animation: test 2s forwards;
+  animation: test 1s forwards;
   /* Card Value */
 }
 .Menu__card__container .Menu__value {
@@ -471,9 +484,11 @@ footer ul {
 @keyframes test {
   from {
     opacity: 0;
+    top: 50px;
   }
   to {
     opacity: 1;
+    top: 0px;
   }
 }
 /* Checkbox and effect hover */
