@@ -54,7 +54,7 @@
     font-size: 15px;
     cursor: pointer;
     opacity: 0;
-    animation: test 0.5s forwards;
+    animation: apparition 0.5s forwards;
     overflow: hidden;
     /* Card Value */
     .Menu__value {
@@ -131,7 +131,7 @@ width: 65%;
     animation-delay: 2.5s;
 }
 
-@keyframes test {
+@keyframes apparition {
     from {
         opacity: 0;
         transform: translateY(15px);
