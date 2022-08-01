@@ -369,7 +369,7 @@ footer ul {
   font-family: "Shrikhand", cursive;
 }
 .Menu h2 {
-  color: #8c8c8c;
+  color: black;
   font-weight: 100;
   font-size: 17px;
   padding-bottom: 3px;
@@ -377,7 +377,34 @@ footer ul {
 }
 .Menu span {
   width: 16%;
-  border-bottom: 3px solid #b3b3b3;
+  border-bottom: 3px solid #99E2D0;
+}
+
+/* animation like */
+.like {
+  /* heart like */
+  display: flex;
+  justify-content: flex-end;
+}
+.like .heart_empty {
+  opacity: 1;
+  position: absolute;
+}
+.like .heart_full {
+  color: #ae80e5;
+  opacity: 0;
+}
+
+i:hover {
+  animation: heart 1s;
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Card container */
@@ -508,7 +535,8 @@ footer ul {
   animation: rotation 0.5s forwards;
 }
 
-.anim:hover .checkbox {
+.anim:hover .checkbox,
+.anim:hover p {
   animation: check 0.5s forwards;
   display: flex;
 }

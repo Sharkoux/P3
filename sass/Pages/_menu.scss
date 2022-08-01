@@ -27,7 +27,7 @@
     }
 
     h2 {
-        color: lighten($color: #000000, $amount: 55);
+        color: black;
         font-weight: 100;
         font-size: 17px;
         padding-bottom: 3px;
@@ -36,10 +36,41 @@
    
     span {
         width: 16%;
-        border-bottom: 3px solid lighten($color: #000000, $amount: 70);
+        border-bottom: 3px solid $color_tertiary;
     }
 }
 
+
+/* animation like */
+
+.like {
+    /* heart like */
+  display: flex;
+  justify-content: flex-end;
+  
+  .heart_empty {
+      opacity: 1;
+      position: absolute;
+      
+  }
+  .heart_full {
+      color: $color_primary_lighten;
+      opacity: 0;
+  }
+}
+i:hover {
+  
+      animation: heart 1s;
+      @keyframes heart {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+  
+      }
+  }
 /* Card container */
 .Menu__card__container {
     display: flex;
@@ -176,7 +207,8 @@ width: 65%;
     animation: rotation 0.5s forwards;
 }
 
-.anim:hover .checkbox {
+.anim:hover .checkbox,
+.anim:hover p {
     animation: check 0.5s forwards;
     display: flex;
 }
